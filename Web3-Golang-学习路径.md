@@ -324,7 +324,7 @@ err = client.SendTransaction(context.Background(), signedTx)
 
 1. **Golang 环境**
    ```bash
-   # 安装 Golang (1.25+ 推荐，1.26 即将发布)
+   # 安装 Golang (1.25+ 推荐，1.26 正式版预计2026年2月发布)
    brew install go  # macOS
    ```
 
@@ -352,9 +352,12 @@ err = client.SendTransaction(context.Background(), signedTx)
 
 ### 测试网络
 
-- **Sepolia**：以太坊主要测试网（支持到 2026 年 9 月）
-- **Hoodi**：以太坊验证者和质押测试网（2025 年新增）
-- **Amoy**：Polygon 测试网（替代已废弃的 Mumbai）
+- **Sepolia**：以太坊主要测试网（支持到2026年9月，主要用于DApp开发）
+- **Hoodi**：以太坊验证者和质押测试网（2025年3月激活，支持到2028年9月）
+- **Amoy**：Polygon PoS测试网（2024年4月替代Mumbai）
+- **Ephemery**：短周期验证者测试网（用于快速测试）
+
+**注意**: Holesky测试网已于2025年9月关闭，请使用Hoodi进行验证者测试。
 
 ### 获取测试币
 
